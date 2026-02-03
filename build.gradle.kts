@@ -11,9 +11,6 @@ plugins {
 }
 
 subprojects {
-    dependencyLocking {
-        lockAllConfigurations()
-    }
     // force logback-core:1.5.25 to resolve CVE-2026-1225 and CVE-2025-11226
     configurations.all {
         resolutionStrategy.force("ch.qos.logback:logback-core:1.5.25")
